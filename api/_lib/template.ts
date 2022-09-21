@@ -1,20 +1,6 @@
-import { readFileSync } from "fs";
 import { marked } from "marked";
 import { sanitizeHtml } from "./sanitizer";
 import { ParsedRequest } from "./types";
-const twemoji = require("twemoji");
-const twOptions = { folder: "svg", ext: ".svg" };
-const emojify = (text: string) => twemoji.parse(text, twOptions);
-
-const rglr = readFileSync(
-  `${__dirname}/../_fonts/Inter-Regular.woff2`
-).toString("base64");
-const bold = readFileSync(`${__dirname}/../_fonts/Inter-Bold.woff2`).toString(
-  "base64"
-);
-const mono = readFileSync(`${__dirname}/../_fonts/Vera-Mono.woff2`).toString(
-  "base64"
-);
 
 function getCss(theme: string, fontSize: string) {
   let background = "white";
@@ -31,7 +17,6 @@ function getCss(theme: string, fontSize: string) {
 
     body {
         background: ${background};
-        background-image: radial-gradient(circle at 25px 25px, ${radial} 2%, transparent 0%), radial-gradient(circle at 75px 75px, ${radial} 2%, transparent 0%);
         background-size: 100px 100px;
         height: 100vh;
         display: flex;
@@ -103,7 +88,10 @@ export function getHtml(parsedReq: ParsedRequest) {
     <body>
         <div>
            <div class="heading">
-                ${emojify(md ? marked(text) : sanitizeHtml(text))}
+                ${md ? marked(text) : sanitizeHtml(text)}
+            </div>
+            <div>
+                https://yukyu.net
             </div>
         </div>
     </body>
