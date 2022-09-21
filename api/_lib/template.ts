@@ -49,14 +49,14 @@ function getCss(fontSize: string) {
     }
     
     .heading {
-        font-size: ${sanitizeHtml(fontSize)};
-        font-style: normal;
+        font-size: 50px;
+        font-style: bold;
         color: ${foreground};
         line-height: 1.8;
         font-family: 'BIZ UDGothic', sans-serif;
     }
     .siteName{
-        font-size: 1em;
+        font-size: 30px;
     }`;
 }
 
