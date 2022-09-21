@@ -7,10 +7,9 @@ function getCss(fontSize: string) {
   let foreground = "black";
 
   return `
-    @import url('https://fonts.googleapis.com/css2?family=BIZ+UDGothic:wght@400;700&display=swap');   
+    @import url('https://fonts.googleapis.com/css2?family=BIZ+UDGothic:wght@400;700&display=swap');
     body {
         background: ${background};
-        font-family: 'BIZ UDGothic', sans-serif;
         background-size: 100px 100px;
         height: 100vh;
         display: flex;
@@ -54,6 +53,7 @@ function getCss(fontSize: string) {
         font-style: normal;
         color: ${foreground};
         line-height: 1.8;
+        font-family: 'BIZ UDGothic', sans-serif;
     }
     .siteName{
         font-size: 1em;
