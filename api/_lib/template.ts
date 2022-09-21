@@ -17,6 +17,7 @@ function getCss(fontSize: string) {
         text-align: center;
         align-items: center;
         justify-content: center;
+        font-family: 'BIZ UDGothic', sans-serif;
     }
 
     code {
