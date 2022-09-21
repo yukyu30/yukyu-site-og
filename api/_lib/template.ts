@@ -7,7 +7,7 @@ function getCss() {
   let foreground = "black";
 
   return `
-    @import url('https://fonts.googleapis.com/css2?family=BIZ+UDGothic:wght@400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap');
     body {
         background: ${background};
         background-size: 100px 100px;
@@ -16,7 +16,7 @@ function getCss() {
         text-align: center;
         align-items: center;
         justify-content: center;
-        font-family: 'BIZ UDGothic', sans-serif;
+        font-family: 'BIZ UDPGothic', sans-serif;
     }
 
     code {
@@ -49,14 +49,14 @@ function getCss() {
     }
     
     .heading {
-        font-size: 50px;
+        font-size: 80px;
         font-style: bold;
         color: ${foreground};
         line-height: 1.8;
-        font-family: 'BIZ UDGothic', sans-serif;
+        font-family: 'BIZ UDPGothic', sans-serif;
     }
     .siteName{
-        font-size: 30px;
+        font-size: 45px;
     }`;
 }
 
