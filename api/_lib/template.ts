@@ -2,7 +2,7 @@ import { marked } from "marked";
 import { sanitizeHtml } from "./sanitizer";
 import { ParsedRequest } from "./types";
 
-function getCss(fontSize: string) {
+function getCss() {
   let background = "white";
   let foreground = "black";
 
@@ -61,14 +61,14 @@ function getCss(fontSize: string) {
 }
 
 export function getHtml(parsedReq: ParsedRequest) {
-  const { text, md, fontSize } = parsedReq;
+  const { text, md } = parsedReq;
   return `<!DOCTYPE html>
 <html>
     <meta charset="utf-8">
     <title>Generated Image</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        ${getCss(fontSize)}
+        ${getCss()}
     </style>
     <body>
         <div>
