@@ -49,8 +49,8 @@ function getCss() {
     }
     
     .heading {
-        font-size: 80px;
-        font-style: bold;
+        font-size: 90px;
+        font-style: 700;
         color: ${foreground};
         line-height: 1.8;
         font-family: 'BIZ UDPGothic', sans-serif;
