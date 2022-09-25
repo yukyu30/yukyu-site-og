@@ -3,7 +3,6 @@ import { sanitizeHtml } from "./sanitizer";
 import { ParsedRequest } from "./types";
 
 function getCss() {
-  let background = "white";
   let foreground = "black";
 
   return `
