@@ -9,7 +9,6 @@ function getCss() {
   return `
     @import url('https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap');
     body {
-        background: ${background};
         background-size: cover;
         background-image: url("/bg.png");
         height: 100vh;
