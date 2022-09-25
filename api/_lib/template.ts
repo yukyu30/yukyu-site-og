@@ -10,7 +10,8 @@ function getCss() {
     @import url('https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap');
     body {
         background: ${background};
-        background-size: 100px 100px;
+        background-size: cover;
+        background-image: url("/bg.png");
         height: 100vh;
         display: flex;
         text-align: center;
