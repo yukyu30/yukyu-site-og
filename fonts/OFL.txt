@@ -1,4 +1,10 @@
-Copyright (c) 2016-2018 The Inter Project Authors (me@rsms.me)
+Inter (latin) and Noto Sans JP are both licensed under the SIL Open Font License 1.1.
+The license text below applies to both files in this directory.
+
+Inter: Copyright (c) 2016 The Inter Project Authors (https://github.com/rsms/inter)
+Noto Sans JP: Copyright 2022 The Noto Project Authors (github.com/notofonts/latin-greek-cyrillic), with the Japanese glyphs from the Noto CJK project (https://github.com/notofonts/noto-cjk), licensed under the same OFL.
+
+Copyright (c) 2016 The Inter Project Authors (https://github.com/rsms/inter)
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
 This license is copied below, and is also available with a FAQ at:
